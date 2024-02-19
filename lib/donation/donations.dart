@@ -16,16 +16,16 @@ class _Donations extends State<Donations> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-            backgroundColor: Theme.of(context).colorScheme.background,
+            backgroundColor: Colors.green,
             appBar: AppBar(
-              backgroundColor: Theme.of(context).colorScheme.background,
+              backgroundColor: Colors.green,
               title: Row(
                 children: [
                   Icon(Icons.monetization_on),
                   const SizedBox(
                     width: 5,
                   ),
-                  const Text('Donation Menu',
+                  const Text('Donation',
                       style:
                           TextStyle(fontWeight: FontWeight.w900, fontSize: 30))
                 ],
@@ -46,190 +46,193 @@ class _Donations extends State<Donations> {
                   childAspectRatio: 1 / 5),
               itemCount: 1,
               itemBuilder: (context, int i) {
-                return Column(
-                  children: [
-                    Material(
-                        elevation: 3,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: InkWell(
-                          borderRadius: BorderRadius.circular(20),
-                          onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewTema()));
-                          },
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset('assets/temalogo.png'),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                        decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius:
-                                                BorderRadius.circular(30)),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text('BİLGİ',
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 10)),
-                                        )),
-                                    SizedBox(width: 10),
-                                    Container(
-                                        decoration: BoxDecoration(
-                                            color: Colors.green.shade100,
-                                            borderRadius:
-                                                BorderRadius.circular(30)),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text('BAĞIŞ',
-                                              style: TextStyle(
-                                                  color: Colors.green,
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 10)),
-                                        ))
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Text(
-                                  "TEMA",
-                                  style: TextStyle(
-                                      fontSize: 20, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Text(
-                                  'Help the forests in Turkiye!',
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey.shade700,
-                                      fontWeight: FontWeight.w300),
-                                ),
-                              ),
-                              Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 12.0),
+                return Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    children: [
+                      Material(
+                          elevation: 3,
+                          color: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(20),
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewTema()));
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset('assets/temalogo.png'),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
                                   child: Row(
                                     children: [
-                                      Text(
-                                        '\$10.00',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.blue[400],
-                                            fontWeight: FontWeight.w700),
-                                      ),
+                                      Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              borderRadius:
+                                                  BorderRadius.circular(30)),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('BİLGİ',
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 10)),
+                                          )),
+                                      SizedBox(width: 10),
+                                      Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.green.shade100,
+                                              borderRadius:
+                                                  BorderRadius.circular(30)),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('BAĞIŞ',
+                                                style: TextStyle(
+                                                    color: Colors.green,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 10)),
+                                          ))
                                     ],
-                                  )),
-                                  
-                            ],
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Text(
+                                    "TEMA",
+                                    style: TextStyle(
+                                        fontSize: 20, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Text(
+                                    'Help the forests in Turkiye!',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey.shade700,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                ),
+                                Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          '\$10.00',
+                                          style: TextStyle(
+                                              fontSize: 20,
+                                              color: Colors.blue[400],
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                      ],
+                                    )),
+                                    
+                              ],
+                            ),
+                            
+                          )),
+                          const SizedBox(
+                            height: 40,
                           ),
-                          
-                        )),
-                        const SizedBox(
-                          height: 40,
-                        ),
-                        Material(
-                        elevation: 3,
-                        color: Colors.white,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                        child: InkWell(
-                          borderRadius: BorderRadius.circular(20),
-                          onTap: () {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewWorld()));
-                          },
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Image.asset('assets/Rainforest_Trust_logo.png'),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Row(
-                                  children: [
-                                    Container(
-                                        decoration: BoxDecoration(
-                                            color: Colors.red,
-                                            borderRadius:
-                                                BorderRadius.circular(30)),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text('BİLGİ',
-                                              style: TextStyle(
-                                                  color: Colors.white,
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 10)),
-                                        )),
-                                    SizedBox(width: 10),
-                                    Container(
-                                        decoration: BoxDecoration(
-                                            color: Colors.green.shade100,
-                                            borderRadius:
-                                                BorderRadius.circular(30)),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Text('BAĞIŞ',
-                                              style: TextStyle(
-                                                  color: Colors.green,
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 10)),
-                                        ))
-                                  ],
-                                ),
-                              ),
-                              const SizedBox(height: 8),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Text(
-                                  "Rainforest Trust",
-                                  style: TextStyle(
-                                      fontSize: 20, fontWeight: FontWeight.bold),
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Text(
-                                  'Help the animals in the world!',
-                                  style: TextStyle(
-                                      fontSize: 12,
-                                      color: Colors.grey.shade700,
-                                      fontWeight: FontWeight.w300),
-                                ),
-                              ),
-                              Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 12.0),
+                          Material(
+                          elevation: 3,
+                          color: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(20),
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => WebViewWorld()));
+                            },
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Image.asset('assets/Rainforest_Trust_logo.png'),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
                                   child: Row(
                                     children: [
-                                      Text(
-                                        '\$10.00',
-                                        style: TextStyle(
-                                            fontSize: 20,
-                                            color: Colors.blue[400],
-                                            fontWeight: FontWeight.w700),
-                                      ),
+                                      Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.red,
+                                              borderRadius:
+                                                  BorderRadius.circular(30)),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('BİLGİ',
+                                                style: TextStyle(
+                                                    color: Colors.white,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 10)),
+                                          )),
+                                      SizedBox(width: 10),
+                                      Container(
+                                          decoration: BoxDecoration(
+                                              color: Colors.green.shade100,
+                                              borderRadius:
+                                                  BorderRadius.circular(30)),
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: Text('BAĞIŞ',
+                                                style: TextStyle(
+                                                    color: Colors.green,
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 10)),
+                                          ))
                                     ],
-                                  )),
-                                  
-                            ],
-                          ),
-                          
-                        )),
-                  ],
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Text(
+                                    "Rainforest Trust",
+                                    style: TextStyle(
+                                        fontSize: 20, fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Text(
+                                    'Help the animals in the world!',
+                                    style: TextStyle(
+                                        fontSize: 12,
+                                        color: Colors.grey.shade700,
+                                        fontWeight: FontWeight.w300),
+                                  ),
+                                ),
+                                Padding(
+                                    padding: EdgeInsets.symmetric(horizontal: 12.0),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          '\$10.00',
+                                          style: TextStyle(
+                                              fontSize: 20,
+                                              color: Colors.blue[400],
+                                              fontWeight: FontWeight.w700),
+                                        ),
+                                      ],
+                                    )),
+                                    
+                              ],
+                            ),
+                            
+                          )),
+                    ],
+                  ),
                 );
               },
             ),

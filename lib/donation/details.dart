@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DonationDetailsScreen extends StatelessWidget {
   const DonationDetailsScreen({super.key});
@@ -7,7 +8,11 @@ class DonationDetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext) {
     return Scaffold(
-      appBar: AppBar(),
+      backgroundColor: Colors.green,
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        title: Text('Firewall Anti-Fire App', style: GoogleFonts.mavenPro(color: Colors.black,fontSize: 35, fontWeight: FontWeight.w500),),
+      ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
