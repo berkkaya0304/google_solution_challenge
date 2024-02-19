@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "775344918903",
+    "project_id": "firewall-c6143",
+    "storage_bucket": "firewall-c6143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775344918903:android:8bdba156b01b47af935172",
+        "android_client_info": {
+          "package_name": "com.example.google_solution_challenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmUlTOZuFbIkBUiRKOK3yZi1kw-XGJpoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
