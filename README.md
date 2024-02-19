@@ -4,7 +4,7 @@
 ##How To Run/Test The App?
 #Download APK
 
-<a href="[https://readme.com/](https://drive.google.com/file/d/1-tL711j-F-Z8CfiupdcoBxDjAJEfqAvx/view?usp=sharing)">Download Link</a>
+<a href="https://drive.google.com/file/d/1-tL711j-F-Z8CfiupdcoBxDjAJEfqAvx/view?usp=sharing">Download Link</a>
 
 
 You can download our apk from link (recomended - new version) or from apk_app (previous version) folder in our repo. Please use Android.
